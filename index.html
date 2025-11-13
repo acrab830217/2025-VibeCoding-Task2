@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A. Chen · Frontend Dev 個人品牌網站</title>
+  <title>AC · 個人品牌網站</title>
   <meta name="description" content="這是一個用來介紹前端開發者個人背景、專業技能、作品集與聯絡方式的個人品牌網站，方便合作夥伴與潛在客戶快速了解、瀏覽作品並主動聯繫。">
   <style>
     /* CSS:BASE-START */
@@ -302,6 +302,17 @@
     .about-body {
     }
 
+    .about-list {
+      margin: 1.25rem 0 0;
+      padding-left: 1.2rem;
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+    }
+
+    .about-list li {
+      margin-bottom: 0.4rem;
+    }
+
     .about-image-wrapper {
       max-width: 360px;
       justify-self: center;
@@ -541,23 +552,26 @@
         <div class="container">
           <div class="surface about-layout">
             <div class="about-body">
-              <h2 id="about-heading" class="section-title">關於我（目前為占位內容）</h2>
+              <h2 id="about-heading" class="section-title">關於我</h2>
               <p class="section-intro">
-                這裡是 About 區的暫時占位文字，預計放入個人背景簡介、自學或工作經歷、專注領域與職涯故事等內容。現在的文字只是說明用途，目的是提供一個清楚的 HTML 結構骨架。
+                我目前主要在做前端開發工作，同時參與教學與少量接案，平常多使用 HTML、CSS 與現代前端工具來切版與建構介面，也習慣協助規劃網站結構與使用流程，讓設計和程式之間更順利銜接。
               </p>
               <p>
-                之後會用 <strong>Section SDD 的 Prompt</strong> 產生 About 區的正式內容與版面設計。請開發者將產生好的新的
-                <strong>&lt;section id="about" class="section section-about"&gt;…&lt;/section&gt;</strong>
-                程式碼整段貼在
-                <strong>SECTION:ABOUT-START / SECTION:ABOUT-END</strong> 兩個註解中間，完全取代現在這一區。
+                過去的背景讓我很在意「溝通」和「說明清楚」這件事，所以不論是寫 code、教學還是對接需求，我都會盡量把需求拆小、流程講白，讓一起合作的人都可以知道下一步是什麼、為什麼要這樣做。
               </p>
-              <p class="muted-note">
-                開發備註：若未來需要拆成多個子區塊（例如「學經歷」、「自我介紹」、「價值觀」），可以在新的 Section SDD 版本裡新增對應的 div 與 class，這裡不做過多假設。
-              </p>
+              <ul class="about-list">
+                <li>協助從需求到版面，整理出清楚的前端結構與元件切割方式。</li>
+                <li>用一般人聽得懂的方式，解釋技術細節與開發限制，降低溝通成本。</li>
+                <li>陪同檢視現有頁面與程式碼，提出實際可行的調整方向與優化建議。</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn-primary" href="#projects">查看作品集</a>
+                <a class="btn-outline" href="#contact">聯絡我</a>
+              </div>
             </div>
             <div class="about-image-wrapper">
-              <img src="https://images.unsplash.com/photo-1522202195461-41a5244770c2?auto=format&fit=crop&w=900&q=80"
-                   alt="在共享工作空間中使用筆電進行開發工作的情境照片"
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80"
+                   alt="專注在螢幕前撰寫程式碼的工程師示意照片"
                    loading="lazy">
             </div>
           </div>
